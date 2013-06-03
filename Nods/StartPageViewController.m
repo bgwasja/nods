@@ -35,4 +35,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)openTapped:(id)sender {
+}
+
+- (IBAction)twitterTapped:(id)sender {
+}
+
+- (IBAction)emailTapped:(id)sender {
+}
+
+- (IBAction)facebookTapped:(id)sender {
+}
+
+- (IBAction)linkedinTapped:(id)sender {
+}
 @end

@@ -29,6 +29,14 @@
 		AA19D6A8175CC13900A561E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA19D675175CC13900A561E3 /* Foundation.framework */; };
 		AA19D6B0175CC13900A561E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA19D6AE175CC13900A561E3 /* InfoPlist.strings */; };
 		AA19D6B3175CC13900A561E3 /* NodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA19D6B2175CC13900A561E3 /* NodsTests.m */; };
+		AA19D6BE175CC26000A561E3 /* StartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA19D6BD175CC26000A561E3 /* StartPageViewController.m */; };
+		AA19D6C1175CC88F00A561E3 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA19D6C0175CC88F00A561E3 /* InfoViewController.m */; };
+		AA19D6C4175CD50900A561E3 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA19D6C3175CD50900A561E3 /* ThirdViewController.m */; };
+		AA19D6C7175CD9E300A561E3 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA19D6C6175CD9E300A561E3 /* FourthViewController.m */; };
+		AA19D6C9175CE39300A561E3 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = AA19D6C8175CE39300A561E3 /* twitter.png */; };
+		AA19D6CB175CE4A200A561E3 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = AA19D6CA175CE4A200A561E3 /* email.png */; };
+		AA19D6CD175CE53D00A561E3 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = AA19D6CC175CE53D00A561E3 /* facebook.png */; };
+		AA19D6CF175CE5AF00A561E3 /* linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = AA19D6CE175CE5AF00A561E3 /* linkedin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +79,18 @@
 		AA19D6AF175CC13900A561E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA19D6B1175CC13900A561E3 /* NodsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodsTests.h; sourceTree = "<group>"; };
 		AA19D6B2175CC13900A561E3 /* NodsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodsTests.m; sourceTree = "<group>"; };
+		AA19D6BC175CC26000A561E3 /* StartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPageViewController.h; sourceTree = "<group>"; };
+		AA19D6BD175CC26000A561E3 /* StartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPageViewController.m; sourceTree = "<group>"; };
+		AA19D6BF175CC88F00A561E3 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		AA19D6C0175CC88F00A561E3 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		AA19D6C2175CD50800A561E3 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		AA19D6C3175CD50900A561E3 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		AA19D6C5175CD9E300A561E3 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		AA19D6C6175CD9E300A561E3 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		AA19D6C8175CE39300A561E3 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		AA19D6CA175CE4A200A561E3 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		AA19D6CC175CE53D00A561E3 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		AA19D6CE175CE5AF00A561E3 /* linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,12 +156,16 @@
 				AA19D68E175CC13900A561E3 /* MainStoryboard_iPad.storyboard */,
 				AA19D691175CC13900A561E3 /* FirstViewController.h */,
 				AA19D692175CC13900A561E3 /* FirstViewController.m */,
-				AA19D694175CC13900A561E3 /* first.png */,
-				AA19D696175CC13900A561E3 /* first@2x.png */,
 				AA19D698175CC13900A561E3 /* SecondViewController.h */,
 				AA19D699175CC13900A561E3 /* SecondViewController.m */,
-				AA19D69B175CC13900A561E3 /* second.png */,
-				AA19D69D175CC13900A561E3 /* second@2x.png */,
+				AA19D6C2175CD50800A561E3 /* ThirdViewController.h */,
+				AA19D6C3175CD50900A561E3 /* ThirdViewController.m */,
+				AA19D6C5175CD9E300A561E3 /* FourthViewController.h */,
+				AA19D6C6175CD9E300A561E3 /* FourthViewController.m */,
+				AA19D6BC175CC26000A561E3 /* StartPageViewController.h */,
+				AA19D6BD175CC26000A561E3 /* StartPageViewController.m */,
+				AA19D6BF175CC88F00A561E3 /* InfoViewController.h */,
+				AA19D6C0175CC88F00A561E3 /* InfoViewController.m */,
 				AA19D67A175CC13900A561E3 /* Supporting Files */,
 			);
 			path = Nods;
@@ -150,6 +174,14 @@
 		AA19D67A175CC13900A561E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA19D6CE175CE5AF00A561E3 /* linkedin.png */,
+				AA19D6CC175CE53D00A561E3 /* facebook.png */,
+				AA19D6CA175CE4A200A561E3 /* email.png */,
+				AA19D6C8175CE39300A561E3 /* twitter.png */,
+				AA19D694175CC13900A561E3 /* first.png */,
+				AA19D696175CC13900A561E3 /* first@2x.png */,
+				AA19D69B175CC13900A561E3 /* second.png */,
+				AA19D69D175CC13900A561E3 /* second@2x.png */,
 				AA19D67B175CC13900A561E3 /* Nods-Info.plist */,
 				AA19D67C175CC13900A561E3 /* InfoPlist.strings */,
 				AA19D67F175CC13900A561E3 /* main.m */,
@@ -261,6 +293,10 @@
 				AA19D697175CC13900A561E3 /* first@2x.png in Resources */,
 				AA19D69C175CC13900A561E3 /* second.png in Resources */,
 				AA19D69E175CC13900A561E3 /* second@2x.png in Resources */,
+				AA19D6C9175CE39300A561E3 /* twitter.png in Resources */,
+				AA19D6CB175CE4A200A561E3 /* email.png in Resources */,
+				AA19D6CD175CE53D00A561E3 /* facebook.png in Resources */,
+				AA19D6CF175CE5AF00A561E3 /* linkedin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +335,10 @@
 				AA19D684175CC13900A561E3 /* AppDelegate.m in Sources */,
 				AA19D693175CC13900A561E3 /* FirstViewController.m in Sources */,
 				AA19D69A175CC13900A561E3 /* SecondViewController.m in Sources */,
+				AA19D6BE175CC26000A561E3 /* StartPageViewController.m in Sources */,
+				AA19D6C1175CC88F00A561E3 /* InfoViewController.m in Sources */,
+				AA19D6C4175CD50900A561E3 /* ThirdViewController.m in Sources */,
+				AA19D6C7175CD9E300A561E3 /* FourthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
