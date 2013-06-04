@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
 
 @interface StartPageViewController : UIViewController
 - (IBAction)openTapped:(id)sender;
 - (IBAction)twitterTapped:(id)sender;
 - (IBAction)emailTapped:(id)sender;
 - (IBAction)facebookTapped:(id)sender;
-- (IBAction)linkedinTapped:(id)sender;
 
 @end

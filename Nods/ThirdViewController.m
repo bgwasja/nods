@@ -7,6 +7,7 @@
 //
 
 #import "ThirdViewController.h"
+#import "ThirdCell.h"
 
 @interface ThirdViewController ()
 
@@ -14,25 +15,81 @@
 
 @implementation ThirdViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"thirdCell"];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark -
+#pragma mark UICollectionViewDataSource
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView
+    numberOfItemsInSection:(NSInteger)section
+{
+    return 20;
+}
+
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                 cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    ThirdCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"thirdCell" forIndexPath:indexPath];
+    UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"email.png"]];
+    cell.backgroundView = bg;
+    return cell;
+}
+
+
+/*
+ -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+ {
+ CustomCollectionView *header = nil;
+ if ([kind isEqual:UICollectionElementKindSectionHeader])
+ {
+ header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+ withReuseIdentifier:@"MyHeader"
+ forIndexPath:indexPath];
+ header.headerLabel.text = @"Select level";
+ }
+ return header;
+ }
+ */
+
+#pragma mark -
+#pragma mark UICollectionViewDelegate
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"detail" sender:self];
+}
+
+
+#pragma mark - CollectionViewDelegateFlowLayout
+
+
+- (UIEdgeInsets)collectionView:
+(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(1, 12, 18, 8);
+}
+
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    return 10;
 }
 
 @end

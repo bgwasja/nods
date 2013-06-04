@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FourthViewController : UIViewController
+@interface FourthViewController : UICollectionViewController<UICollectionViewDataSource,UIApplicationDelegate,UICollectionViewDelegateFlowLayout>
 
 @end
