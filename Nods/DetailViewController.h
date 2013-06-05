@@ -10,7 +10,9 @@
 
 @interface DetailViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *instructionsImage;
-@property (strong, nonatomic) IBOutlet UILabel *instructionsLabel;
+@property (strong, nonatomic) IBOutlet UITextView *instructionsText;
+
+
 - (IBAction)shareTapped:(id)sender;
 
 @end
