@@ -8,6 +8,7 @@
 
 #import "FourthViewController.h"
 #import "FourthCell.h"
+#import "FourthCustomColletionView.h"
 
 @interface FourthViewController ()
 
@@ -54,20 +55,19 @@
 }
 
 
-/*
  -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
  {
- CustomCollectionView *header = nil;
+ FourthCustomColletionView *header = nil;
  if ([kind isEqual:UICollectionElementKindSectionHeader])
  {
  header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
- withReuseIdentifier:@"MyHeader"
+ withReuseIdentifier:@"fourthHeader"
  forIndexPath:indexPath];
- header.headerLabel.text = @"Select level";
+ header.headerLabel.text = @"Fourth Header !!!";
  }
  return header;
  }
- */
+ 
 
 #pragma mark -
 #pragma mark UICollectionViewDelegate

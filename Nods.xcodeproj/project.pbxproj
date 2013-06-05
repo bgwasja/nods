@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0EA19F175F29C500619F39 /* FirstCustomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0EA19E175F29C500619F39 /* FirstCustomCollectionView.m */; };
+		AA0EA1A2175F29EB00619F39 /* SecondCustomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0EA1A1175F29EB00619F39 /* SecondCustomCollectionView.m */; };
+		AA0EA1A5175F2A0600619F39 /* ThirdCustomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0EA1A4175F2A0600619F39 /* ThirdCustomCollectionView.m */; };
+		AA0EA1A8175F2A2F00619F39 /* FourthCustomColletionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0EA1A7175F2A2F00619F39 /* FourthCustomColletionView.m */; };
 		AA115581175DE38000E0E403 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA115580175DE38000E0E403 /* DetailViewController.m */; };
 		AA115583175DEFC000E0E403 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA115582175DEFC000E0E403 /* Social.framework */; };
 		AA115585175DFA5100E0E403 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA115584175DFA5100E0E403 /* MessageUI.framework */; };
@@ -57,6 +61,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA0EA19D175F29C500619F39 /* FirstCustomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCustomCollectionView.h; sourceTree = "<group>"; };
+		AA0EA19E175F29C500619F39 /* FirstCustomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCustomCollectionView.m; sourceTree = "<group>"; };
+		AA0EA1A0175F29EB00619F39 /* SecondCustomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCustomCollectionView.h; sourceTree = "<group>"; };
+		AA0EA1A1175F29EB00619F39 /* SecondCustomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCustomCollectionView.m; sourceTree = "<group>"; };
+		AA0EA1A3175F2A0600619F39 /* ThirdCustomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCustomCollectionView.h; sourceTree = "<group>"; };
+		AA0EA1A4175F2A0600619F39 /* ThirdCustomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCustomCollectionView.m; sourceTree = "<group>"; };
+		AA0EA1A6175F2A2F00619F39 /* FourthCustomColletionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthCustomColletionView.h; sourceTree = "<group>"; };
+		AA0EA1A7175F2A2F00619F39 /* FourthCustomColletionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthCustomColletionView.m; sourceTree = "<group>"; };
 		AA11557F175DE38000E0E403 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		AA115580175DE38000E0E403 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		AA115582175DEFC000E0E403 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -145,6 +157,8 @@
 				AA19D692175CC13900A561E3 /* FirstViewController.m */,
 				AA115586175E05EB00E0E403 /* FirstCell.h */,
 				AA115587175E05EB00E0E403 /* FirstCell.m */,
+				AA0EA19D175F29C500619F39 /* FirstCustomCollectionView.h */,
+				AA0EA19E175F29C500619F39 /* FirstCustomCollectionView.m */,
 			);
 			name = FirstView;
 			sourceTree = "<group>";
@@ -156,6 +170,8 @@
 				AA19D699175CC13900A561E3 /* SecondViewController.m */,
 				AA11558A175E15FA00E0E403 /* SecondCell.h */,
 				AA11558B175E15FA00E0E403 /* SecondCell.m */,
+				AA0EA1A0175F29EB00619F39 /* SecondCustomCollectionView.h */,
+				AA0EA1A1175F29EB00619F39 /* SecondCustomCollectionView.m */,
 			);
 			name = SecondView;
 			sourceTree = "<group>";
@@ -167,6 +183,8 @@
 				AA19D6C3175CD50900A561E3 /* ThirdViewController.m */,
 				AA11558E175E1A2000E0E403 /* ThirdCell.h */,
 				AA11558F175E1A2100E0E403 /* ThirdCell.m */,
+				AA0EA1A3175F2A0600619F39 /* ThirdCustomCollectionView.h */,
+				AA0EA1A4175F2A0600619F39 /* ThirdCustomCollectionView.m */,
 			);
 			name = ThirdView;
 			sourceTree = "<group>";
@@ -178,6 +196,8 @@
 				AA19D6C6175CD9E300A561E3 /* FourthViewController.m */,
 				AA115592175E20A900E0E403 /* FourthCell.h */,
 				AA115593175E20A900E0E403 /* FourthCell.m */,
+				AA0EA1A6175F2A2F00619F39 /* FourthCustomColletionView.h */,
+				AA0EA1A7175F2A2F00619F39 /* FourthCustomColletionView.m */,
 			);
 			name = FourthView;
 			sourceTree = "<group>";
@@ -409,6 +429,10 @@
 				AA11558C175E15FA00E0E403 /* SecondCell.m in Sources */,
 				AA115590175E1A2100E0E403 /* ThirdCell.m in Sources */,
 				AA115594175E20A900E0E403 /* FourthCell.m in Sources */,
+				AA0EA19F175F29C500619F39 /* FirstCustomCollectionView.m in Sources */,
+				AA0EA1A2175F29EB00619F39 /* SecondCustomCollectionView.m in Sources */,
+				AA0EA1A5175F2A0600619F39 /* ThirdCustomCollectionView.m in Sources */,
+				AA0EA1A8175F2A2F00619F39 /* FourthCustomColletionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

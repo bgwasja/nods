@@ -8,6 +8,7 @@
 
 #import "ThirdViewController.h"
 #import "ThirdCell.h"
+#import "ThirdCustomCollectionView.h"
 
 @interface ThirdViewController ()
 
@@ -49,26 +50,26 @@
                  cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ThirdCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"thirdCell" forIndexPath:indexPath];
-    UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"email.png"]];
+    UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"twitter.png"]];
     cell.backgroundView = bg;
     return cell;
 }
 
 
-/*
+
  -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
  {
- CustomCollectionView *header = nil;
+ ThirdCustomCollectionView *header = nil;
  if ([kind isEqual:UICollectionElementKindSectionHeader])
  {
  header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
- withReuseIdentifier:@"MyHeader"
+ withReuseIdentifier:@"thirdHeader"
  forIndexPath:indexPath];
- header.headerLabel.text = @"Select level";
+ header.headerLabel.text = @"Third Header !!!";
  }
  return header;
  }
- */
+ 
 
 #pragma mark -
 #pragma mark UICollectionViewDelegate

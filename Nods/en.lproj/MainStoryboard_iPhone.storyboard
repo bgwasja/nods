@@ -14,13 +14,13 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aff-eZ-nIa">
                             <size key="itemSize" width="90" height="90"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="thirdCell" id="Kh3-AT-y3z" customClass="ThirdCell">
-                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <rect key="frame" x="0.0" y="50" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
@@ -31,6 +31,29 @@
                                 <size key="customSize" width="90" height="90"/>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="thirdHeader" id="tf3-vi-DgU" customClass="ThirdCustomCollectionView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpK-lr-yxC">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="171" id="9sz-gm-OFa"/>
+                                        <constraint firstAttribute="height" constant="21" id="OMV-ZF-U9x"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="WpK-lr-yxC" firstAttribute="centerX" secondItem="tf3-vi-DgU" secondAttribute="centerX" type="default" id="1ii-ng-Ugo"/>
+                                <constraint firstItem="WpK-lr-yxC" firstAttribute="top" secondItem="tf3-vi-DgU" secondAttribute="top" constant="14" id="DCQ-Kc-S0m"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="headerLabel" destination="WpK-lr-yxC" id="kNu-ir-8bQ"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="0Sk-Vb-xnX" id="eU1-MX-Ab7"/>
                             <outlet property="delegate" destination="0Sk-Vb-xnX" id="cPH-ES-Ety"/>
@@ -43,7 +66,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOa-Pu-2Hx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="502"/>
+            <point key="canvasLocation" x="649" y="490"/>
         </scene>
         <!--Fourth View Controller - Four-->
         <scene sceneID="rNN-f0-gL1">
@@ -55,13 +78,13 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="chv-Z2-IcT">
                             <size key="itemSize" width="90" height="90"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="fourthCell" id="z0n-R2-luR" customClass="FourthCell">
-                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <rect key="frame" x="0.0" y="50" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
@@ -71,6 +94,29 @@
                                 <size key="customSize" width="90" height="90"/>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="fourthHeader" id="rww-E5-naY" customClass="FourthCustomColletionView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5K-mb-oMV">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="189" id="RWf-VS-Uc0"/>
+                                        <constraint firstAttribute="height" constant="21" id="tnF-Yt-saT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="E5K-mb-oMV" firstAttribute="centerX" secondItem="rww-E5-naY" secondAttribute="centerX" type="default" id="OOz-rS-LHN"/>
+                                <constraint firstItem="E5K-mb-oMV" firstAttribute="top" secondItem="rww-E5-naY" secondAttribute="top" constant="14" id="TRg-gw-naZ"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="headerLabel" destination="E5K-mb-oMV" id="hHy-v6-uzz"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="9IM-ij-QtR" id="wS4-QS-kDg"/>
                             <outlet property="delegate" destination="9IM-ij-QtR" id="0CB-50-Edk"/>
@@ -83,7 +129,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDm-Wh-hiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="1174"/>
+            <point key="canvasLocation" x="649" y="1134"/>
         </scene>
         <!--First View Controller - First-->
         <scene sceneID="gpr-Zw-Kd1">
@@ -95,13 +141,13 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rAa-3J-nRw">
                             <size key="itemSize" width="90" height="90"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4HN-WS-9CL" customClass="FirstCell">
-                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <rect key="frame" x="0.0" y="50" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
@@ -112,6 +158,29 @@
                                 <size key="customSize" width="90" height="90"/>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="firstHeader" id="p7t-II-Vx7" customClass="FirstCustomCollectionView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOI-xZ-2qM">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="157" id="5co-Xm-aNE"/>
+                                        <constraint firstAttribute="height" constant="21" id="mJL-yX-dbP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="hOI-xZ-2qM" firstAttribute="top" secondItem="p7t-II-Vx7" secondAttribute="top" constant="14" id="g1K-pN-srZ"/>
+                                <constraint firstItem="hOI-xZ-2qM" firstAttribute="centerX" secondItem="p7t-II-Vx7" secondAttribute="centerX" type="default" id="oik-Df-f5y"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="headerLabel" destination="hOI-xZ-2qM" id="zEG-Mm-AuC"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="FpU-zG-ejR" id="pa5-JF-UIC"/>
                             <outlet property="delegate" destination="FpU-zG-ejR" id="0iW-Nc-HdW"/>
@@ -124,7 +193,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcD-Os-Lkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="-851"/>
+            <point key="canvasLocation" x="649" y="-799"/>
         </scene>
         <!--Second View Controller - Second-->
         <scene sceneID="iPc-8m-sOO">
@@ -136,13 +205,13 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Zj-fX-QP8">
                             <size key="itemSize" width="90" height="90"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="secondCell" id="Ddf-5O-nSJ" customClass="SecondCell">
-                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <rect key="frame" x="0.0" y="50" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
@@ -153,6 +222,29 @@
                                 <size key="customSize" width="90" height="90"/>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="secondHeader" id="OUM-PO-81U" customClass="SecondCustomCollectionView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nah-Cz-Pwh">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="192" id="bfz-dg-8eY"/>
+                                        <constraint firstAttribute="height" constant="21" id="fSq-4f-8w0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Nah-Cz-Pwh" firstAttribute="centerX" secondItem="OUM-PO-81U" secondAttribute="centerX" type="default" id="3E5-E3-Bcv"/>
+                                <constraint firstItem="Nah-Cz-Pwh" firstAttribute="top" secondItem="OUM-PO-81U" secondAttribute="top" constant="14" id="lPb-bq-fJu"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="headerLabel" destination="Nah-Cz-Pwh" id="sxO-Jd-Tpd"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="d1h-SL-tkw" id="tEU-9Z-ZW3"/>
                             <outlet property="delegate" destination="d1h-SL-tkw" id="lJZ-Uk-j6G"/>
@@ -165,7 +257,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSX-JM-Qny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="-169"/>
+            <point key="canvasLocation" x="649" y="-153"/>
         </scene>
         <!--Start Page View Controller-->
         <scene sceneID="fz3-bM-rs4">
@@ -424,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkO-gp-3rs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="180"/>
+            <point key="canvasLocation" x="1213" y="180"/>
         </scene>
     </scenes>
     <resources>
@@ -446,11 +538,23 @@
         <class className="FirstCell" superclassName="UICollectionViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstCell.h"/>
         </class>
+        <class className="FirstCustomCollectionView" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstCustomCollectionView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="FirstViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
         </class>
         <class className="FourthCell" superclassName="UICollectionViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FourthCell.h"/>
+        </class>
+        <class className="FourthCustomColletionView" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FourthCustomColletionView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="FourthViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FourthViewController.h"/>
@@ -467,6 +571,12 @@
         <class className="SecondCell" superclassName="UICollectionViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondCell.h"/>
         </class>
+        <class className="SecondCustomCollectionView" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondCustomCollectionView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="SecondViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
         </class>
@@ -482,6 +592,12 @@
         <class className="ThirdCell" superclassName="UICollectionViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdCell.h"/>
         </class>
+        <class className="ThirdCustomCollectionView" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdCustomCollectionView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="ThirdViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
         </class>
@@ -496,6 +612,9 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

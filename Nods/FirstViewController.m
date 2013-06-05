@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "FirstCell.h"
+#import "FirstCustomCollectionView.h"
 
 @interface FirstViewController ()
 
@@ -55,20 +56,20 @@
 }
 
 
-/*
+
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    CustomCollectionView *header = nil;
+    FirstCustomCollectionView *header = nil;
     if ([kind isEqual:UICollectionElementKindSectionHeader])
     {
         header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
-                                                    withReuseIdentifier:@"MyHeader"
+                                                    withReuseIdentifier:@"firstHeader"
                                                            forIndexPath:indexPath];
-        header.headerLabel.text = @"Select level";
+        header.headerLabel.text = @"First Header !!!";
     }
     return header;
 }
-*/
+
 
 #pragma mark -
 #pragma mark UICollectionViewDelegate

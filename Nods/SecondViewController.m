@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "SecondCell.h"
+#import "SecondCustomCollectionView.h"
 
 @interface SecondViewController ()
 
@@ -49,26 +50,26 @@
                  cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SecondCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"secondCell" forIndexPath:indexPath];
-    UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"email.png"]];
+    UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"facebook.png"]];
     cell.backgroundView = bg;
     return cell;
 }
 
 
-/*
+
  -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
  {
- CustomCollectionView *header = nil;
+ SecondCustomCollectionView *header = nil;
  if ([kind isEqual:UICollectionElementKindSectionHeader])
  {
  header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
- withReuseIdentifier:@"MyHeader"
+ withReuseIdentifier:@"secondHeader"
  forIndexPath:indexPath];
- header.headerLabel.text = @"Select level";
+ header.headerLabel.text = @"Second Header !!!";
  }
  return header;
  }
- */
+ 
 
 #pragma mark -
 #pragma mark UICollectionViewDelegate
