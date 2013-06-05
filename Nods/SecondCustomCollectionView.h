@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondCustomCollectionView : UICollectionReusableView
+
 @property (strong, nonatomic) IBOutlet UILabel *headerLabel;
 
 @end

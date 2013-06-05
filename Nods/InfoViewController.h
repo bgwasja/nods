@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface InfoViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UIWebView *infoWebView;
 
 @end

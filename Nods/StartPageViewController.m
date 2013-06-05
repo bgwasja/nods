@@ -36,8 +36,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)openTapped:(id)sender {
 }
+
 
 - (IBAction)twitterTapped:(id)sender {
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
@@ -46,8 +48,8 @@
         [tweetSheet setInitialText:@"This is cool app about nods !!!"];
         [self presentViewController: tweetSheet animated: YES completion: nil];
     }
-
 }
+
 
 - (IBAction)emailTapped:(id)sender {
     MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
@@ -55,6 +57,7 @@
     NSArray *emailAddresses = [[NSArray alloc] initWithObjects:@"me@company.com", nil];
     NSString *sendSubject = [[NSString alloc] initWithFormat:@"Nods"];
     NSString *sendMessage = [[NSString alloc] initWithFormat:@"This is cool app about nods"];
+    
     [mailComposer setToRecipients:emailAddresses];
     [mailComposer setSubject:sendSubject];
     [mailComposer setMessageBody:sendMessage isHTML:NO];

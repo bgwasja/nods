@@ -56,19 +56,17 @@
 }
 
 
-
- -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
- {
- ThirdCustomCollectionView *header = nil;
- if ([kind isEqual:UICollectionElementKindSectionHeader])
- {
- header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
- withReuseIdentifier:@"thirdHeader"
- forIndexPath:indexPath];
- header.headerLabel.text = @"Third Header !!!";
- }
- return header;
- }
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+     ThirdCustomCollectionView *header = nil;
+     if ([kind isEqual:UICollectionElementKindSectionHeader])
+     {
+         header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                     withReuseIdentifier:@"thirdHeader"
+                                                            forIndexPath:indexPath];
+         header.headerLabel.text = @"Third Header !!!";
+     }
+     return header;
+}
  
 
 #pragma mark -
@@ -81,7 +79,6 @@
 
 
 #pragma mark - CollectionViewDelegateFlowLayout
-
 
 - (UIEdgeInsets)collectionView:
 (UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {

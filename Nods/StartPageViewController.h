@@ -10,6 +10,7 @@
 #import <Social/Social.h>
 
 @interface StartPageViewController : UIViewController
+
 - (IBAction)openTapped:(id)sender;
 - (IBAction)twitterTapped:(id)sender;
 - (IBAction)emailTapped:(id)sender;

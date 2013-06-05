@@ -28,7 +28,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 #pragma mark -
 #pragma mark UICollectionViewDataSource
 
@@ -55,18 +54,16 @@
 }
 
 
- -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
- {
- FourthCustomColletionView *header = nil;
- if ([kind isEqual:UICollectionElementKindSectionHeader])
- {
- header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
- withReuseIdentifier:@"fourthHeader"
- forIndexPath:indexPath];
- header.headerLabel.text = @"Fourth Header !!!";
- }
- return header;
- }
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    FourthCustomColletionView *header = nil;
+    if ([kind isEqual:UICollectionElementKindSectionHeader]){
+        header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                    withReuseIdentifier:@"fourthHeader"
+                                                           forIndexPath:indexPath];
+        header.headerLabel.text = @"Fourth Header !!!";
+    }
+    return header;
+}
  
 
 #pragma mark -

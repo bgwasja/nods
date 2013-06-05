@@ -23,12 +23,12 @@
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"firstCell"];
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 #pragma mark -
 #pragma mark UICollectionViewDataSource
@@ -56,21 +56,17 @@
 }
 
 
-
- -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
- {
- SecondCustomCollectionView *header = nil;
- if ([kind isEqual:UICollectionElementKindSectionHeader])
- {
- header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
- withReuseIdentifier:@"secondHeader"
- forIndexPath:indexPath];
- header.headerLabel.text = @"Second Header !!!";
- }
- return header;
- }
+ -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+     SecondCustomCollectionView *header = nil;
+     if ([kind isEqual:UICollectionElementKindSectionHeader]){
+         header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                     withReuseIdentifier:@"secondHeader"
+                                                            forIndexPath:indexPath];
+         header.headerLabel.text = @"Second Header !!!";
+     }
+     return header;
+}
  
-
 #pragma mark -
 #pragma mark UICollectionViewDelegate
 
@@ -81,7 +77,6 @@
 
 
 #pragma mark - CollectionViewDelegateFlowLayout
-
 
 - (UIEdgeInsets)collectionView:
 (UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
