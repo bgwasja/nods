@@ -474,7 +474,11 @@
                                 <items>
                                     <navigationItem id="v7d-8Q-cMD">
                                         <barButtonItem key="backBarButtonItem" title="Back" id="PPb-Fw-dz3"/>
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="7JP-51-inE"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="7JP-51-inE">
+                                            <connections>
+                                                <segue destination="4" kind="modal" id="hEz-9j-ibQ"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -632,6 +636,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="hEz-9j-ibQ"/>
         <segue reference="jX9-b4-GuE"/>
     </inferredMetricsTieBreakers>
 </document>
